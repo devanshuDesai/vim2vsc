@@ -32,8 +32,9 @@ You can get vim2vsc by running:
 Usage
 -----------
 
-    cd vim2vsc
-    python3 convert.py
+    ``cd vim2vsc``
+    
+    ``python3 convert.py``
 
 ``convert.py`` accepts three flags:
 
