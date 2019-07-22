@@ -31,10 +31,10 @@ You can get vim2vsc by running:
 
 Usage
 -----------
+::
 
-``cd vim2vsc``
-
-``python3 convert.py``
+    cd vim2vsc
+    python3 convert.py
 
 ``convert.py`` accepts three flags:
 
@@ -49,10 +49,13 @@ before modifying it.
 
 Examples
 ----------
+::
 
     python3 convert.py --vimrc /Users/.vim/.vimrc --settings ~/downloads/settings.json --nobackup
 
 Equivalently, in shorthand form:
+
+::
 
     python3 convert.py -v /Users/.vim/.vimrc  -s ~/downloads/settings.json -b
 
