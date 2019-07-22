@@ -27,7 +27,7 @@ Installation
 
 You can get vim2vsc by running:
 
-    git clone https://github.com/devanshuDesai/vim2vsc
+``git clone https://github.com/devanshuDesai/vim2vsc``
 
 Usage
 -----------
@@ -36,6 +36,7 @@ Usage
     python3 convert.py
 
 ``convert.py`` accepts three flags:
+
 - ``--vimrc`` Specify the path to your ``.vimrc`` installation (guesses 
 path based on system if you don't provide one).
 
