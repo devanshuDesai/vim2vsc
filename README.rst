@@ -65,11 +65,11 @@ Equivalently, in short hand:
 Contribute
 ----------
 
-- Issue Tracker: github.com/$devanshuDesai/vim2vsc/issues
-- Source Code: github.com/devanshuDesai/vim2vsc
+- Issue Tracker: `https://github.com/devanshuDesai/vim2vsc/issues`
+- Source Code: `https://github.com/devanshuDesai/vim2vsc`
 
 
 License
 -------
 
-    The project is licensed under the MIT license.
+The project is licensed under the MIT license.
