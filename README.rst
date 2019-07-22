@@ -1,11 +1,11 @@
 vim2vsc
 ========
 
-This tool is meant to convert your custom vim bindings from your .vimrc into 
-VSCode compatible bindings. At the time this tool was created, .vimrc is not
+This tool is meant to convert your custom vim bindings from your ``.vimrc`` into 
+VSCode compatible bindings. At the time this tool was created, ``.vimrc`` is not
 officially supported by the VScodeVim extension (the most popular vim emulator
 for VSCode) and there are no known tool that automate the process formatting vim 
-bindings for vscode-vim.
+bindings for VSCodeVim.
 
 Link to VSCodeVim: `https://github.com/VSCodeVim/Vim/`
 
@@ -36,7 +36,7 @@ Usage
 
 ::
     
-    vim2vsc convert.py
+    vim2vsc
 
 ``vim2vsc`` accepts three flags:
 
