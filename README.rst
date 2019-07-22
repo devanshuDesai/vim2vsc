@@ -7,7 +7,7 @@ officially supported by the VScodeVim extension (the most popular vim emulator
 for VSCode) and there are no known tool that automate the process formatting vim 
 bindings for vscode-vim.
 
-Link to VSCodeVim: `<https://github.com/VSCodeVim/Vim/>`
+Link to VSCodeVim: `https://github.com/VSCodeVim/Vim`
 
 Features
 --------
@@ -38,19 +38,21 @@ Usage
 ``convert.py`` accepts three flags:
 - ``--vimrc`` Specify the path to your ``.vimrc`` installation (guesses 
 path based on system if you don't provide one).
+
 - ``--settings`` Specify the path to your ``settings.json`` for your VSCode Installation(guesses 
 path based on system if you don't provide one).
+
 - ``--nobackup`` If this flag is set, vscode-vim doesn't save your old ``package.json``
 before modifying it.
 
 Examples
 ----------
 
-    python3 convert.py --settings ~/downloads/settings.json --nobackup
+    python3 convert.py --vimrc /Users/.vim/.vimrc --settings ~/downloads/settings.json --nobackup
 
-Equivalently,
+Equivalently, in shorthand form:
 
-    python3 convert.py --s ~/downloads/settings.json --b
+    python3 convert.py -v /Users/.vim/.vimrc  -s ~/downloads/settings.json -b
 
 Contribute
 ----------
@@ -62,4 +64,4 @@ Contribute
 License
 -------
 
-    The project is licensed under the MIT license.
+The project is licensed under the MIT license.
