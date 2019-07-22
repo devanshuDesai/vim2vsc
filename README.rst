@@ -1,11 +1,11 @@
 vim2vsc
 ========
 
-This tool is meant to convert your custom vim bindings from your .vimrc into 
-VSCode compatible bindings. At the time this tool was created, .vimrc is not
-officially supported by the VScodeVim extension (the most popular vim emulator
-for VSCode) and there are no known tool that automate the process formatting vim 
-bindings for vscode-vim.
+This tool is meant to convert your custom vim bindings from your ``.vimrc`` files into 
+VSCode compatible ``settings.json`` bindings. At the time this tool was created, 
+``.vimrc`` is not officially supported by the VScodeVim extension (the most popular 
+vim emulatorfor VSCode) and there are no known tool that automate the process formatting 
+vim bindings for vscode-vim.
 
 Link to VSCodeVim: `https://github.com/VSCodeVim/Vim`
 
