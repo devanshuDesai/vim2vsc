@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+__version__ = "0.1.0"
+
 # TODO: Add ability to set nohlsearch, incsearch etc
 # TODO: Add integration for plugins like vim-airline
 
@@ -46,23 +49,20 @@ parser.add_argument("-n", "--nobackup", help="doesn't save your old settings as 
 args = parser.parse_args()
 
 current_platform = platform.system()
-vsc_path = vsc_paths.get(current_platform)
-vim_path = vim_paths.get(current_platform)
+vsc_path = args.settings
+vim_path = args.vimrc
 
 # Uses settings.json path specified by user since vim2vsc doesn't recognize the platform
 if vsc_path is None:
-    if args.settings:
-        vsc_path = args.settings
-    else:
+    vsc_path = vsc_paths.get(current_platform)
+    if vsc_path is None:
         sys.exit("Please specify a path to settings.json for your VSCode")
 
 # Uses .vimrc path specified by user since vim2vsc doesn't recognize the platform
 if vim_path is None:
-    if args.settings:
-        vim_path = args.vimrc
-    else:
-        sys.exit("Please specify a path to your .vimrc")
-
+    vim_path = vim_paths.get(current_platform)
+    if vim_path is None:
+        sys.exit("Please specify a path to .vimrc in your system")
 # Loading contents of settings.json
 try:
     with open(vsc_path) as file:
@@ -143,8 +143,4 @@ def main():
         os.rename(vsc_path, vsc_path.replace('/settings.json', '/old_settings.json'))
     with open(vsc_path, 'w', encoding='utf-8') as f:
         json.dump(vscode, f, ensure_ascii=False, indent=4)
-
-if __name__ == "__main__":
-    main()
-    print('Conversion completed successfully!')
 

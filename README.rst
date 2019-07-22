@@ -20,22 +20,21 @@ Features
 
 Requirements
 ------------
-- Python 3.6+
+- Python 2.7+ (Python 3.6+ Recommended)
 
 Installation
 ------------
 
 You can get vim2vsc by running:
 
-    git clone https://github.com/devanshuDesai/vim2vsc
+    pip install vim2vsc
 
 Usage
 -----------
 
-    cd vim2vsc
-    python3 convert.py
+    vim2vsc convert.py
 
-``convert.py`` accepts three flags:
+``vim2vsc`` accepts three flags:
 - ``--vimrc`` Specify the path to your ``.vimrc`` installation (guesses 
 path based on system if you don't provide one).
 - ``--settings`` Specify the path to your ``settings.json`` for your VSCode Installation(guesses 
@@ -46,11 +45,11 @@ before modifying it.
 Examples
 ----------
 
-    python3 convert.py --settings ~/downloads/settings.json --nobackup
+    vim2vsc --settings ~/downloads/settings.json --nobackup
 
 Equivalently,
 
-    python3 convert.py --s ~/downloads/settings.json --b
+    vim2vsc --s ~/downloads/settings.json --b
 
 Contribute
 ----------
