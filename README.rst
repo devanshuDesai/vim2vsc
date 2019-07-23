@@ -40,11 +40,9 @@ Usage
 
 ``vim2vsc`` accepts three flags:
 
-- ``--vimrc`` Specify the path to your ``.vimrc`` installation (guesses 
-path based on system if you don't provide one).
+- ``--vimrc`` Specify the path to your ``.vimrc`` installation *(guesses path based on system if you don't provide one)*.
 
-- ``--settings`` Specify the path to your ``settings.json`` for your VSCode Installation(guesses 
-path based on system if you don't provide one).
+- ``--settings`` Specify the path to your ``settings.json`` for your VSCode Installation *(guesses path based on system if you don't provide one)*.
 
 - ``--nobackup`` If this flag is set, vscode-vim doesn't save your old ``package.json``
 before modifying it.
